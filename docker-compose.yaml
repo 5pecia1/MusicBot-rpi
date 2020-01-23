@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  music:
+    build: ./
+    restart: always
+    container_name: music
+    #image: justsomebots/musicbot:release-260819
+    volumes:
+      - ./config:/usr/src/musicbot/config
