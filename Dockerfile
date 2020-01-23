@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM python:3.5.9-alpine
 
 # Add project source
 WORKDIR /usr/src/musicbot
@@ -10,7 +10,6 @@ RUN apk update \
   ca-certificates \
   ffmpeg \
   opus \
-  python3 \
   libsodium-dev \
 \
 # Install build dependencies
